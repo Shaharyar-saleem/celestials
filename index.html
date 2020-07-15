@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" sizes="32x32">
+	<meta name="robots" content="index, follow" />
+	<meta name="title" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="">
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+<!--
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link href="//nesna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+-->
+	<!------ Include the above in your HEAD tag ---------->
+	<title>Celestials</title>
+	
+	<!-- Bootstrap 4 -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="libs/animate.min.css">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- owl carousel styles -->
+	<link href='libs/owl/owl.theme.default.min.css' rel='stylesheet' type='text/css'>
+	<link href='libs/owl/owl.carousel.min.css' rel='stylesheet' type='text/css'>
+	
+	<!-- Main CSS -->
+	
+	<link rel="stylesheet" href="css/pricing.css">
+	<link rel="stylesheet" href="libs/spacing.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="preloader">
+	<div class="top-bg-dark" id="top-bg"></div>
+	<div class="loader-middle" id="loader-middle"></div>
+	<div class="bottom-bg-dark" id="bottom-bg"></div>
+</div>
+
+
+<header class="site_header header_white">
+	<!-- Header Navigation -->
+	<nav class="nav-light">
+		<div class="container" id="header-nav-con">
+			<div class="row">
+				<div class="col-md-12 col col-xl-12 fst" style="padding-top:2.8vm">
+					<span class="menu-button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+					<!-- <a href="signup.html" class="btn green_button btn_small">Sign Up</a>
+					<a href="login.html" class="btn light_button btn_small mr-3">Login</a> -->
+					<!-- Header Logo -->
+					<a href="#" class="logotype">
+						<img src="img/logo.png" alt="logotype" class="logo-img">
+					</a>
+					<!-- Navigation Links -->
+					<ul>
+						<li><a href="#Home-white" class="active">Introduction</a></li>
+						<li><a href="#Token" class="">Our System</a></li>
+						<li><a href="#Whitepaper" class="">Pricing</a></li>
+						<li><a href="#Roadmap">Team</a></li>
+						<!-- <li><a href="#Platform">Platform</a></li>
+						<li><a href="#Team">Team</a></li>
+						<li><a href="#News">News</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Mobile Menu -->
+	<div class="mobile-menu">
+		<span class="close-menu-button">
+			<span></span>
+			<span></span>
+		</span>
+		<!-- Mobile Logo  -->
+		<a href="#" class="logotype">
+			<img src="img/logo.png" alt="logotype" id="mobile-logo">
+		</a>
+		<!-- Mobile Links -->
+		<ul>
+			<li><a href="#Home-white">Home</a></li>
+			<li><a href="#Token">Token</a></li>
+			<li><a href="#Whitepaper">Whitepaper</a></li>
+			<li><a href="#Roadmap">Roadmap</a></li>
+			<li><a href="#Platform">Platform</a></li>
+			<li><a href="#Offering">Offering</a></li>
+			<li><a href="#Team">Team</a></li>
+		</ul>
+		<a href="signup.html" class="btn btn-small btn-block gradient_button">Sign Up</a>
+		<a href="login.html" class="btn btn-small btn-block outline_button">Login</a>
+	</div>
+</header>
+	
+
+<section id="Home-dark" class="home_dark valign-center align-center scroll-section">
+	<!-- Parallax scene -->
+		<!-- Parallax scene -->
+	<div class="parallax-bg" id="scene1">
+		<img class="layer layer-1" data-depth="0.05" src="img/dark-skin/header/light-1.png" alt="">
+		<img class="layer layer-2" data-depth="0.2" src="img/dark-skin/header/light-2.png" alt="">
+		<img class="layer layer-3" data-depth="0.5" src="img/dark-skin/header/light-3.png" alt="">
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12 col-md-12">
+				<div class="title title-center">
+					<h1>Make Extra Money<br> While You Learn CRYPTO Trading<br> The RIGHT Way!</h1>
+				</div>
+			</div>
+		</div>
+		<a href="#pricing" class="btn mt-3 mt-md-4 gradient_button" style="margin-top: -20px;">START EARN TODAY!</a>
+	</div>
+</section>
+
+<!-- Section Token Chart -->
+<section id="Token" class="light-chart light-content valign-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-6 col-md-6 valign-center order-2 order-md-1 mt-xs w-30">
+				<canvas id="doughnut-chart"></canvas>
+			</div>
+			<div class="col-xl-6 col-md-6 order-1 order-md-2 w-70">
+				<div class="title title-right">
+					<span>Dear Investor</span>
+					<h2>Dear Investor/Entrepreneur,</h2>
+				</div> 
+				<span class="description-content pb-0">
+					Who doesn’t want (or need) a way to make EXTRA MONEY these days?<br/> And now, with the Internet at your fingertips, and the CRYPTO REVOLUTION it’s SO EASY to take your “spare” hours during the day and turn them them into MONEY!<br>
+					One of the <u>best</u> ways to do that is with CRYPTO CURRENCY TRADING.<br>
+					Obviously, you already know what I’m talking about, or you wouldn’t be here on this page.<br> BUT… did you know that the <u>best</u> way to LEARN all about CRYPTO CURRENCY TRADING is to DO IT… <u>not</u> “read” about it?<br>
+					<span class="pl-lg-5">I’m serious. You need “baptism by immersion” – <u>NOT</u> a bunch of</span><br><span class="pl-lg-5"> boring videos and study courses and charts and books.<br></span>
+					<b>Forget that stuff.</b><br>
+					I’ve come up with a way to help you get “up-to-speed” VERY FAST with everything you <u>need</u> to<br> know about successfully using the CRYPTO system to make a good extra living.<br>
+					And best of all…
+				</span>
+			</div>
+			<a href="#pricing" class="btn mt-3 mt-md-4 gradient_button">JOIN US</a>
+		</div>
+	</div>
+	
+</section>
+
+<!-- Section Whitepaper -->
+<section id="Whitepaper" class="about about-light light-content">
+	<!-- Parallax Scene -->
+	<div class="parallax-bg" id="scene3">
+		<img class="layer layer-1" data-depth="0.15" src="img/dark-skin/whitepaper/light-1.png" alt="">
+		<img class="layer layer-2" data-depth="0.2" src="img/dark-skin/whitepaper/light-2.png" alt="">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-6 col-md-6 w-70">
+				<div class="title title-left">
+					<span>-shadow title 1-</span>
+					<h2>I TEACH you my system WHILE it makes you MONEY!</h2>
+				</div>
+				<span class="description-content">I’ve deliberately given my service a very (out of this earth), (exciting) name: <b>“Crypto Celestials Trading”</b>.<br>Why?<br><i>Because <u>it</u> is that good! Supremely good! Celestial good! </i><br> I use plain tools. I like things SIMPLE. (as they should be) (As the best things in life are simple)<br> (as all good things should be)<br> And therefore I make Crypto Currency Trading as (PLAIN “as the nose on your face”!)<br> Nothing’s hidden. I put it all out for you to see – in plain sight, with full explanations.<br>
+					<b>I not only give you my trading signals, but I TEACH you the <u>how</u>, the <u>what</u>, the <u>when</u>, the<br> <u>where</u>, the <u>WHY</u> – even The <u>Who</u>.</b><br>
+					<u>No details are left out</u> – because I want you to <u>LEARN</u> while you <u>EARN!</u><br>
+					It does no good if you just “blindly” follow some anonymous signal system.<br>
+					I want you to be able to stand on your own two feet and <u>not need me</u> some day.<br>
+					You see, I started <b>Crypto Currency Trading</b> as a simple Telegram channel where I’d post tips<br> and daily advice on how to successfully trade currencies.<br>
+					<b>People interested in making some extra money started following me.</b><br>
+					They started taking my advice.<br>
+					They started making trades of their own.<br>
+					And pretty soon, they all started making some VERY good money!<br>
+				</span>
+			</div>
+			<div class="col-xl-5 col-md-5 d-sm-none d-none d-md-block ml-auto document-wrap w-30">
+				<div class="big-image wow zoomIn" data-wow-delay="0.4s">
+					<!-- <img src="img/pdf-doc.png" alt=""> -->
+				</div>
+			</div>
+			<a href="#pricing" class="btn mt-3 mt-md-4 gradient_button">JOIN US</a>
+		</div>
+	</div>
+</section>	
+
+<!-- 
+	TODO: add this section:
+P.S. Let’s be honest: It never hurts to make a little extra income on top of your primary
+source of income!
+But with all the myths and misconceptions out there about trading crypto currencies, it’s very
+understandable why more people aren’t running to get involved in Crypto trading as a source of
+increasing their income.
+However, NOT using Crypto trading as a profitable “MONEY-MAKER” is definitely a mistake.
+Trading crypto currencies profitably is the easiest way to make a side-income.
+And it doesn’t have to be difficult.
+it’s only difficult when you don’t know what you are doing.
+And that’s why MY goal is to TEACH you – so you do know what you’re doing, and therefore get
+the RESULTS you want!
+The system I’ve developed is proven to work in all market conditions.
+It’s working right now, as I write this and as you read this.
+Don’t delay. Get on board the Crypto Celestials Trading limo-ride today! -->
+
+
+<!-- Section Roadmap -->
+<section id="Roadmap" class="roadmap roadmap-white light-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="title title-center">
+					<span>successes</span>
+					<h2>They told me all about their successes.<br>And they wanted <u>more</u>.</h2>
+				</div>
+			</div>
+			<div class="col-xl-12 col-md-12">
+				<span class="description-content"><i>Before I knew it, this was a daily gig!</i><br>
+					People just kept telling their friends – and more and more guys and gals started coming to the<br> channel <i>daily</i> and actually making <u>PROFITS</u> from the information I was giving them.<br>
+					It felt good to know that I was making <u>a real difference</u> in my visitors’ lives.<br>
+					But pretty soon it grew too big for just a Telegram channel.<br>
+					So I moved everything over to this website, got a pretty little makeover, and now…<br>
+					<b class="pl-lg-5">I <u>continue</u> to teach people HOW TO <u>ENHANCE</u> THEIR</b><br> <b class="pl-lg-5">REGULAR <u>INCOME</u> by trading crypto currencies.</b><br>
+					If you want to supplement your current income – <u>without</u> the hassle of getting an extra shift –<br> take the first step to your <u>financial advance</u> by learning and <i>EARNING</i> the <b>Crypto Celestials<br> Trading</b> way.<br>
+					Today, YOU can subscribe to my service and start enjoying the EXTRA INCOME that you get<br> with profitable Crypto trades.<br>
+					<b>Plus, you’ll like <b>the two different ways</b> we go about helping you make your Crypto trades…</b><br>
+					The first method is our “standard” subscription service, where we send you the trading signals<br> and you manually enter them into your trading platform when you’re ready to make a trade.<br>
+					The second – and newer – method is called our <b>“Trade Copier”</b> because it automatically copies<br> signals from our <u>real</u> trading account to <u>YOUR</u> account.<br>
+				</span>
+				
+			</div>
+			<div class="col-xl-12 col-md-12">
+				<br><br><br><br>
+				<a href="#pricing" class="btn mt-3 mt-md-4 gradient_button">JOIN US</a>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+</section>
+
+<!-- Section Platform -->
+<section id="Platform" class="banner white-banner valign-center light-content">
+	<!-- Owl Carousel Slides -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<div class="owl-carousel tablet-owl owl-theme wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="item">
+						<img src="img/tablet/tablet-item-1.jpg" alt="">
+					</div>
+					<div class="item">
+						<img src="img/tablet/tablet-item-2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<div class="title title-right">
+					<span>Platform</span>
+					<h2>The Most Technological Platform for ICO</h2>
+				</div>
+				<span class="description-content pb-0">This is a major <u>convenience</u> for people who are simply too busy to do it manually, OR who live<br> in time-zones where it’s <i>difficult</i> to react by 4:00 AM when the markets are boiling hot.<br>
+					So, you get to choose which of those two services you want.<br>
+					The “automatic” system costs a bit more, but it’s worth it if you want to make profits<br> consistently.<br>
+					The beautiful thing about being a Crypto trader is that you can truly do it from anywhere –<br> especially the convenience of your own home.<br>
+					You could even be <u>on a vacation holiday</u> somewhere half way around the world. All you need is<br> your favorite device and an Internet connection, and you’re able to make money that day!<br>
+					Plus, our system allows you to <u>learn</u> while you earn.<br>
+					That’s because we make everything totally transparent when we make each trade.<br>
+					We publish all trades <u>AND their results</u> on our website. There’s no place to hide.<br>
+					Everything is laid out for you – all the numbers, all the facts and figures – whereas with most<br> other systems, they just give you a bunch of charts and pretty graphs with nothing tangible you<br> can actually <u>check</u> on.<br>
+					You just have to “take their word for it.”<br>
+					I don’t like that.<br>
+					<b>I want you to KNOW what we’re doing at any given moment.</b><br>
+					<b>I want you to UNDERSTAND the <u>what</u>, the <u>when</u>, and the <u>WHY</u> behind it all.</b><br>
+					That’s the only way to <u>stick with</u> this often-confusing world of crypto currency trading.<br>
+					If you let yourself get bogged down in a slew of other channels and conflicting systems that<br> make you do all the “figuring out” for yourself, you’ll <u>never</u> get anywhere.<br>
+					But if you follow my trades and invest according to what you’re able to risk, you can expect<br> results like these…<br>
+				</span>
+			</div>
+			<a href="#pricing" class="btn mt-3 mt-md-4 gradient_button h-button">JOIN US</a>
+		</div>
+	</div>
+
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-xl-6 offset-xl-6 col-md-6 offset-md-6 w-70">
+				<div class="title title-right">
+					<span>Platform</span>
+					<h2>The Most Technological Platform for ICO</h2>
+				</div>
+				<span class="description-content pb-0">This is a major <u>convenience</u> for people who are simply too busy to do it manually, OR who live in time-zones where it’s <i>difficult</i> to react by 4:00 AM when the markets are boiling hot.
+					So, you get to choose which of those two services you want.
+					The “automatic” system costs a bit more, but it’s worth it if you want to make profits consistently.
+					The beautiful thing about being a Crypto trader is that you can truly do it from anywhere – especially the convenience of your own home.
+					You could even be <u>on a vacation holiday</u> somewhere half way around the world. All you need is your favorite device and an Internet connection, and you’re able to make money that day!
+					Plus, our system allows you to <u>learn</u> while you earn.
+					That’s because we make everything totally transparent when we make each trade.
+					We publish all trades <u>AND their results</u> on our website. There’s no place to hide.
+					Everything is laid out for you – all the numbers, all the facts and figures – whereas with most other systems, they just give you a bunch of charts and pretty graphs with nothing tangible you can actually <u>check</u> on.
+					You just have to “take their word for it.”
+					I don’t like that.
+					<b>I want you to KNOW what we’re doing at any given moment.</b>
+					<b>I want you to UNDERSTAND the <u>what</u>, the <u>when</u>, and the <u>WHY</u> behind it all.</b>
+					That’s the only way to <u>stick with</u> this often-confusing world of crypto currency trading.
+					If you let yourself get bogged down in a slew of other channels and conflicting systems that make you do all the “figuring out” for yourself, you’ll <u>never</u> get anywhere.
+					But if you follow my trades and invest according to what you’re able to risk, you can expect results like these…
+				</span>
+			</div>
+		</div>
+		<a href="#pricing" class="btn mt-3 mt-md-4 gradient_button h-button">JOIN US</a>
+	</div> -->
+</section>
+
+<!-- Section Offering -->
+<section class="offering light-content offering-light">
+	<div class="container">
+		<div class="row gap-y align-items-center">
+			<div class="col-xl-6 col-md-6 w-70">
+				<div class="title title-left">
+					<span>Offering</span>
+					<h2>Launch Our Final Round Offering</h2>
+				</div>
+				<span class="description-content">Yes, you really <u>can</u> make money with <b>Crypto Celestials Trading.</b><br>
+					And you’ll <u>LEARN</u> how to keep doing it… all at the same time!<br>
+					My subscribers are probably a lot like you – young professionals… 25-35 years old… higher-<br>than-average income… with a burning desire to <u>MAKE MONEY</u> while you’re young enough and<br> bold enough to take on a new challenge<u>succeed</u>> where others fail.<br> With <b>Crypto Celestials Trading</b>, you can achieve your dream of <u>fast</u> financial freedom.<br>
+					Or, at the very least, supplement your current income with a “sideline hobby” that just happens<br>  to put a few thousand in your pocket now and then!<br>
+					After all, who wouldn’t <u>love</u> to be sitting on a sunny beach, enjoying the sights, while making<br> profitable trades on your Crypto account – without even worrying about it!<br>
+					<b>You’ll <u>know</u> what you’re doing, because we <u>TEACH</u> you what <u>we’re</u> doing!<br>
+						We <u>insist</u> on that part.</b><br>
+					We believe it’s the only way to ethically and methodically bring you to a point of “mastery” that<br> gives you the <u>confidence</u> you desire when it comes to making risky trades.<br>
+					<span class="pl-lg-5">Not only that, but women seem to love it when a man can </span><br><u><span class="pl-lg-5">control</u> his destiny <i>with his <u>wits</u></i>… instead of just his mitts.</span><br>
+					There’s a certain air of attraction that exudes from a guy who doesn’t have to “sweat” his bills<br> or worry about spending money to have a great time.<br>
+					<u>This</u> kind of “sideline” can <u>do</u> that for you.<br>
+					So start your Risk-Free Subscription today.<br>
+				</span>
+				<!-- <a href="#" class="btn gradient_button">Join Presale</a> -->
+			</div>
+			<div class="col-xl-6 col-md-6 wow fadeInUp w-30" data-wow-delay="0.4s">
+				<!-- Owl Carousel Slides -->
+				<div class="owl-carousel phone-owl owl-theme">
+					<div class="item"><img src="img/mobile/phone-item-1.png" alt=""></div>
+					<div class="item"><img src="img/mobile/phone-item-2.png" alt=""></div>
+				</div>	
+			</div>
+			<a href="#pricing" class="btn mt-3 mt-md-4 gradient_button">JOIN US</a>
+		</div>
+	</div>
+</section>
+
+<section class="offering light-content offering-light">
+	<div class="container">
+		<div class="row gap-y align-items-center">
+			<div class="col-xl-6 col-md-6 w-70">
+				<div class="title title-left">
+					<!-- <span>Offering</span>
+					<h2>Launch Our Final Round Offering</h2> -->
+				</div>
+				<span class="description-content"><b>You’re protected by my 100% Money-Back Guarantee.</b><br>
+					<span class="pl-lg-5"><u>2 weeks</u> of daily service, if you’re <u>not convinced</u> that this is absolutely</span><br> <span class="pl-lg-5"><i>right</i> for you, please send a text/email to <u>cancel</u> and I will issue a prompt </span><br><u><span class="pl-lg-5">refund</u> of every penny you paid.</span>
+				</span>
+				<!-- <a href="#" class="btn gradient_button">Join Presale</a> -->
+			</div>
+			<div class="col-xl-6 col-md-6 wow fadeInUp w-30" data-wow-delay="0.4s">
+				<!-- Owl Carousel Slides -->
+				<div class="owl-carousel phone-owl owl-theme">
+					<div class="item"><img src="img/mobile/phone-item-1.png" alt=""></div>
+					<div class="item"><img src="img/mobile/phone-item-2.png" alt=""></div>
+				</div>	
+			</div>
+			<a href="#pricing" class="btn mt-3 mt-md-4 gradient_button">JOIN US</a>	
+		</div>
+	</div>
+</section>
+
+<!-- Pricing Section -->
+<section class="about-docs about-docs-dark valign-center scroll-section" id="pricing">
+	<div class="Join-us">
+		<!-- <div id="Home-dark1" class="home_dark valign-center align-center padding4"> -->
+			<div class="title title-center">
+				<span>Join us</span>
+				<h2>Pricing</h2>
+				<br>
+			</div>
+			<!-- Parallax scene -->
+			<div class="container group"> 
+				<table style="width:100%">
+					<tr>
+					<th> 
+						<div class="grid-1-5">
+							<h2>Basic</h2>
+							<h3><span class="uppercase">Free</span></h3>
+							<div class="h-divider">
+								<div class="shadow"></div>
+							</div>
+							<ul>
+								<li>Limited Email Support</li>
+								<li>Unlimited Data Transfer</li>
+								<li>10GB Local Storage</li>
+							</ul>
+							<a href="./pages/join.html" class="btn mt-3 mt-md-4 gradient_button">START</a>
+						</div>
+					</th>
+
+					<th>
+						<div class="grid-1-5">
+							<h2>Startup</h2>
+							<h3><sup>$</sup>79<span class="small">/mo</span></h3>
+							<div class="h-divider">
+								<div class="shadow"></div>
+							</div>
+							<ul>
+								<li>Limited Email Support</li>
+								<li>Unlimited Data Transfer</li>
+								<li>20GB Local Storage</li>
+							</ul>       
+							<a href="./pages/join.html" class="btn mt-3 mt-md-4 gradient_button">START</a>  
+						</div>
+					</th>
+
+					<th>
+						<div class="grid-1-5">
+							<h2>Growth</h2>
+							<h3><sup>$</sup>179<span class="small">/mo</span></h3>
+							<div class="h-divider">
+								<div class="shadow"></div>
+							</div>
+							<ul>
+								<li>Email Support</li>
+								<li>Unlimited Data Transfer</li>
+								<li>30GB Local Storage</li>
+							</ul>   
+							<a href="./pages/join.html" class="btn mt-3 mt-md-4 gradient_button">START</a>      
+						</div>
+					</th>
+
+					</tr>
+				</table>
+			</div>
+		<!-- </div> -->
+	</div>
+</section>
+
+
+<!-- Team Section -->
+<section id="Team" class="team light-content team-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="title title-center">
+					<span>Team</span>
+					<h2>Join us
+					</h2>
+				</div>
+			</div>
+			<div class="col-xl-6 offset-xl-3 col-md-6 offset-md-3">
+				<span class="description-content">I understand that my <b>Crypto Celestilas Trading</b> might not be right for everybody. Some people<br> just don’t “get it” – and that’s okay.<br>
+					<b>It leaves more on the table for <u>us!</u></b><br>
+					But if you’re the kind of person who likes to be in charge… even <u>while</u> you earn… then <u>this</u> is your best opportunity.<br>
+					Choose if you prefer the “manual” version of our subscription, or the “automatic”… on the next<br> page.<br>
+					<a href="#pricing" style="color: royalblue;">Click here</a> to get started now!<br>
+					Sincerely,<br>
+					David</span>
+			</div>
+			<!-- <div class="col-xl-12 wow fadeInUp" data-wow-delay="0.2s">
+				<div class="team-card">
+					<div class="photo"><img src="img/team/face-1.png" alt="" /></div>
+					<div class="name">Bob Herman</div>
+					<div class="post">CEO</div>
+					<div class="characteristic">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit esse quam nihil molestiae.</div>
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+				<div class="team-card">
+					<div class="photo"><img src="img/team/face-2.png" alt="" /></div>
+					<div class="name">Rina Vigo</div>
+					<div class="post">Head of Implementation</div>
+					<div class="characteristic">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit esse quam nihil molestiae.</div>
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+				<div class="team-card">
+					<div class="photo"><img src="img/team/face-3.png" alt="" /></div>
+					<div class="name">Donovan Lochan</div>
+					<div class="post">CTO</div>
+					<div class="characteristic">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit esse quam nihil molestiae.</div>
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+				<div class="team-card">
+					<div class="photo"><img src="img/team/face-4.png" alt="" /></div>
+					<div class="name">Terry Huff</div>
+					<div class="post">Chief Investment Officer</div>
+					<div class="characteristic">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit esse quam nihil molestiae.</div>
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+		    </div> -->
+		</div>
+	</div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="small-footer footer-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12 col-md-12 col-sm-12 pb-12">
+				<!-- Footer Logo -->
+				<a href="#" class="logotype">
+					<img src="img/logo.png" alt="logotype" class="logo-img">
+				</a>	
+			</div>
+			
+			<!-- Back to top button -->
+			<a href="#Home-dark" id="back-to-top" title="Back to top"><i class="fas fa-angle-up"></i></a>
+		</div>
+	</div>
+
+</footer>
+	<div id="progress-page" data-0="width:0%;background:rgba(0, 132, 250, 1);" data-end="width:100%;background:rgba(10, 164, 249, 1);"></div>
+
+<!--<script src="js/jquery.min.js"></script>-->
+<!--<script src="libs/bootstrap/js/jquery.min.js"></script>-->
+<!--<script src="libs/bootstrap/js/bootstrap.min.js"></script>-->
+<script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(117072)</script> 
+<!-- <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(117082)</script>  -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="libs/wow.min.js"></script>
+<script src="libs/owl/owl.carousel.min.js"></script>
+<script src="libs/parallax.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/main.js"></script>
+<script src="libs/particles.min.js"></script>
+<script src="libs/charts/Chart.bundle.min.js"></script>
+<script src="libs/charts/chartjs-plugin-deferred.min.js"></script>
+<script src="libs/skrollr.js"></script>
+
+
+</body>
+</html>
