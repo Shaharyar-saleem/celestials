@@ -25,13 +25,7 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v2-beta
       with:
-        version: 13
-    - name: action-yarn
-      uses: Borales/actions-yarn@v2.1.0
-      with:
-        cmd: install  
-    - name: creating build
-      run: yarn build  
+        version: 13 
     - name: install surge
       run: npm install -g surge
     - name: deploy surge
