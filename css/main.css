@@ -217,6 +217,7 @@ ul {
 
 section {
     padding: 8rem 0;
+    height: auto !important;
 }
 
 .wrapper {
@@ -736,7 +737,6 @@ input.gradient_button,
     font-size: 1.5rem;
     line-height: 2rem;
     padding-top: 2rem;
-    padding-bottom: 3rem;
     display: block;
     font-size: 16px;
     color: black !important;
@@ -946,7 +946,7 @@ input.gradient_button,
     border-radius: 35px;
     padding: 6px 6px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .phone-owl:before {
@@ -1212,6 +1212,7 @@ input.gradient_button,
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
+    text-align: center;
 }
 
 .mobile-menu ul li a:hover {
@@ -1770,7 +1771,8 @@ header nav .menu-button span:first-child {
 
 header nav ul,
 header nav .btn {
-    float: right;
+    /* float: right; */
+    margin-left: 20px;
 }
 
 header .btn-group .outline_button,
@@ -3558,7 +3560,7 @@ footer .copyright span:nth-child(1) {
     }
 
     .title span {
-        font-size: 3.5rem;
+        font-size: 3.0rem;
         line-height: 3.5rem;
         top: -30px;
     }
@@ -4995,6 +4997,8 @@ footer .copyright span:nth-child(1) {
     }
 }
 
+
+/* Mobile media query */
 @media only screen and (max-width: 480px) {
     header nav .btn {
         display: none;
@@ -5020,10 +5024,14 @@ footer .copyright span:nth-child(1) {
     }
 
     .title h2 {
-        font-size: 1.3125rem;
+        font-size: 1.2rem;
         line-height: 1.5rem;
     }
-
+    .description-content {
+        font-size: 16px !important;
+        text-align: justify !important;
+        padding-right: 10px;
+    }
     .counter ul li span {
         font-size: 2.875rem;
     }
@@ -5287,6 +5295,8 @@ body {
 
 .col-md-12.col.col-xl-12 {
     margin-top: -20px;
+    margin-right: 10px;
+    z-index: 100;
 }
 
 #join-home {
